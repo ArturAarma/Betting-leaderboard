@@ -21,3 +21,13 @@
 .read-the-docs {
   color: #888;
 }
+
+p {
+  font-weight: 500;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+p:hover {
+  filter: drop-shadow(0 0 1.5em #1d21ffaa);
+}
