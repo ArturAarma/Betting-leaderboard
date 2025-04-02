@@ -20,7 +20,7 @@ const LTable = ({leaderboard}: Props) => {
     const renderedRows = leaderboard.map((item, index) => {
         return (
             <tr key={item.id}>
-                <td className="td p-4 font-bold">TOP {index + 1}</td>
+                <td className="tdatacell">TOP {index + 1}</td>
                 {configs.map((val: any, i: number) => {
                     return <td key={val.label || i} className="tableD">{val.render(item)}</td>
                 })}
@@ -30,11 +30,11 @@ const LTable = ({leaderboard}: Props) => {
     })
     
     const renderedHeaders = [
-        <th key="Rank" className="th p-4 text-left text-xs">Rank</th>,
+        <th key="Rank" className="tHeaderCell">Rank</th>,
       
         ...configs.map((config: any) => {
           return (
-            <th className="th p-4 text-left text-xs" key={config.label}>
+            <th className="tHeaderCell" key={config.label}>
               {config.label}
             </th>
           );
@@ -44,7 +44,7 @@ const LTable = ({leaderboard}: Props) => {
       return (
         <div>
           <table>
-            <thead className="min-w-full">
+            <thead>
               <tr>{renderedHeaders}</tr> 
             </thead>
             <tbody>{renderedRows}</tbody>
