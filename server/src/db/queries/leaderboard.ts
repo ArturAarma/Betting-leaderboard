@@ -12,11 +12,26 @@ export const getLeaderboard = () => db('bet')
     db.raw(`
         ROUND(
         SUM(CASE WHEN bet.status = 'WON' THEN 1 ELSE 0 END)::decimal
-        / NULLIF(COUNT(*), 0) * 100, 2
+        / NULLIF(COUNT(*), 0) * 100, 0
         ) AS win_percentage
         `),
-    
+    db.raw(`
+        ROUND(
+        SUM(
+            CASE 
+                WHEN bet.status = 'WON' THEN (bet.stake * bet.odds) - bet.stake
+                WHEN bet.status = 'LOST' THEN -bet.stake
+                ELSE 0
+            END
+          ),
+          2
+        ) AS profit
+        `)
     )
+    .orderBy('profit', 'desc')
+    .limit(10);
+    
+    
 
 
 

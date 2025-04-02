@@ -26,8 +26,13 @@ p {
   font-weight: 500;
   will-change: filter;
   transition: filter 300ms;
+  padding: 5px 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: left;
+  background-color: #000000;
 }
 
 p:hover {
-  filter: drop-shadow(0 0 1.5em #1d21ffaa);
+  filter: drop-shadow(0 0 1.5em #a8a8a8aa);
 }
