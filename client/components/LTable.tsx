@@ -1,4 +1,3 @@
-import React from "react";
 import "./LTable.css";
 import type { DatabaseLeaderboard } from "../src/types";
 

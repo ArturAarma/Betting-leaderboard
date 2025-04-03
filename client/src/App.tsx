@@ -1,8 +1,8 @@
 import leaderbordLogo from "/leaderboard.png";
 import "./App.css";
 import { useEffect, useState } from "react";
-import { fetchCustomers, fetchLeaderboard } from "./requests";
-import type { DatabaseCustomer, DatabaseLeaderboard } from "./types";
+import { fetchLeaderboard } from "./requests";
+import type { DatabaseLeaderboard } from "./types";
 import LTable from "../components/LTable";
 
 function App() {
