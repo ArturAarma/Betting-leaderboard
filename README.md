@@ -110,15 +110,8 @@ Customers with **negative profit** are excluded from the leaderboard.
 
 ## 📸 Screenshots
 *(Optional: Add UI screenshots here to visualize leaderboard, filters, etc.)*
+![UI](image.png)
 
 ## 📬 Contact
-Have questions or feedback? Feel free to reach out via email or LinkedIn. If you're hiring, I'd love to chat — especially for developer roles focused on full-stack TypeScript work.
+https://www.linkedin.com/in/arturaarma/
 
-## 🧪 Future Improvements (Ideas)
-* Add pagination or infinite scroll to the leaderboard
-* Implement authentication and user dashboards
-* Add caching layer or optimize heavy queries
-* Containerize with Docker Compose
-* Add unit tests with Jest or integration tests with Cypress
-
-Built with ❤️ using modern web tools.
