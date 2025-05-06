@@ -108,8 +108,7 @@ Customers with **negative profit** are excluded from the leaderboard.
       └─ queries
 ```
 
-## 📸 Screenshots
-*(Optional: Add UI screenshots here to visualize leaderboard, filters, etc.)*
+## 📸 Project preview
 ![UI](image.png)
 
 ## 📬 Contact
