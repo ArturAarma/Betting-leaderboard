@@ -24,6 +24,7 @@ dist-ssr/
 out/
 
 # Environment files
+server/.env
 .env
 .env.*.local
 .env.local
