@@ -27,10 +27,6 @@ function App() {
     init();
   }, []);
 
-  useEffect(() => {
-    
-  }, [leaderboard]);
-
   
 
   return (
